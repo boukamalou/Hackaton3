@@ -71,7 +71,7 @@
 
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label for="date_k">Date:</label>
+                    <label for="date_k">Date</label>
                     <input id="date_k" type="date" required class="form-control" name="date_k" value="">
                 </div>    
             </div>
@@ -79,20 +79,20 @@
             <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label for="new_cas">Nombre de nouveaux cas:</label>
+                    <label for="new_cas">Nombre de nouveaux cas</label>
                     <input id="new_cas" type="number" required class="form-control" name="new_cas" value="">
                 </div>    
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label for="deces">Nombre de décès:</label>
+                    <label for="deces">Nombre de décès</label>
                     <input id="deces" type="number" required class="form-control" name="deces" value="">
                 </div>    
             </div>
             </div>
             <div class="form-group">
             <div class="form-group">
-                    <label for="guerison">Nombre de guérison:</label>
+                    <label for="guerison">Nombre de guérisons</label>
                     <input id="guerison" type="number" required class="form-control" name="guerison" value="">
                 </div> 
             </div>
