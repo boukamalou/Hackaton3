@@ -101,10 +101,9 @@ hr {
 }
 </style>
 <body>
-<button onclick="document.getElementById('id01').style.display='block'">Ajouter des statistiques:</button>
+<button onclick="document.getElementById('id01').style.display='block'">Ajouter des statistiques</button>
 
     <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
     <form class="modal-content" action="/action_page.php" method="post">
         <div class="container">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
@@ -112,7 +111,7 @@ hr {
         <div class="row">
     <div class="col-sm-6">
         <label for="">Pays</label>
-            <select id="selecteur_pays">
+            <select id="add_pays">
                 <option value="13">Afrique du sud</option>
                 <option value="8">Algérie</option>
                 <option value="4">Allemagne</option>
@@ -133,21 +132,21 @@ hr {
         </div>    
     <div class="col-sm-6">
         <div class="form-group">
-            <label for="date">Date</label>
-            <input id="date" type="date" required class="form-control" name="date" value="">
+            <label for="date_k">Date:</label>
+            <input id="date_k" type="date" required class="form-control" name="date_k" value="">
         </div>    
     </div>
 </div>
 <div class="row">
     <div class="col-sm-6">
         <div class="form-group">
-            <label for="new_cas">Nombre de nouveaux cas</label>
+            <label for="new_cas">Nombre de nouveaux cas:</label>
             <input id="new_cas" type="number" required class="form-control" name="new_cas" value="">
         </div>    
     </div>
     <div class="col-sm-6">
         <div class="form-group">
-            <label for="deces">Nombre de décès</label>
+            <label for="deces">Nombre de décès:</label>
             <input id="deces" type="number" required class="form-control" name="deces" value="">
         </div>    
     </div>
