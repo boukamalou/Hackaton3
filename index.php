@@ -44,8 +44,10 @@
             <div id="id01" class="modal">
             <form id="formulaire_ajout" class="modal-content p-4" method="post">
                 <div class="container">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-                <h1>Mettre à jour les statistiques</h1>
+                    <div class="row w-100">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                    <h1>Mettre à jour les statistiques</h1>
+                </div>
                 <div class="row">
             <div class="col-sm-6">
                 <label for="add_pays">Pays</label>
