@@ -1,18 +1,18 @@
 // requête ajax POST quand submit formulaire modal d'ajout de données
 $('#formulaire_ajout').submit(function(event) {
+  console.log('submitted', this, event);
   event.preventDefault();
   var data = {
-    id_cas: $('#id_cas').val(),
+    //id_cas: $('#id_cas').val(),
     new_cas: $('#new_cas').val(),
     deces: $('#deces').val(),
     guerison: $('#guerison').val(),
-    date: $('#date').val(),
-    id_pays: $('#selecteur_pays').val()
+    date: $('#date_k').val(),
+    id_pays: $('#add_pays').val()
   };
   $.ajax({
     url: 'ajax.php',
     method: 'POST',
-    //dataType: 'json',
     data: data,
     success: function(data) {
       console.log('POST success', data);
@@ -36,6 +36,7 @@ $('#selecteur_pays').change(function() {
   });
 });
 
+
 function drawLineChart(data, options) {
   var chart = new google.charts.Line(document.getElementById('TODO_ID_ELEMENT__GRAPHIQUE'));
   chart.draw(data, google.charts.Line.convertOptions(options));
@@ -47,7 +48,7 @@ function drawLineChart(data, options) {
 google.charts.load('current', {'packages': ['line']});
 google.charts.setOnLoadCallback(drawChart);
 
-function drawChart() {
+function _drawChart() {
   var data = new google.visualization.DataTable();
   data.addColumn('number', 'Heures');
   data.addColumn('number', 'Nouveaux cas');
