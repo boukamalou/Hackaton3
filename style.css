@@ -1,17 +1,6 @@
 body {font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;}
     
-    /*Set a style for all buttons */ 
-    button {
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 0.3;
-        }
-    
     modal__button:hover {
         opacity:1;
     }
