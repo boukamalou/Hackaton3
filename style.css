@@ -3,7 +3,6 @@ body {font-family: Arial, Helvetica, sans-serif;
     
     Set a style for all buttons 
     button {
-        background-color: #772953;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -28,11 +27,7 @@ body {font-family: Arial, Helvetica, sans-serif;
         background-color: #ccc;
         color: black;
     }
-    
-    /* Add a color to the delete button */
-    .deletebtn {
-        background-color: #772953;
-    }
+
     
     /* Add padding and center-align text to the container */
     .modalcontainer {
@@ -79,7 +74,7 @@ body {font-family: Arial, Helvetica, sans-serif;
     
     .close:hover,
     .close:focus {
-        color: #772953;
+        color: rgb(77, 74, 74);
         cursor: pointer;
     }
     

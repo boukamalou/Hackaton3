@@ -14,6 +14,7 @@
     </head>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <select class="dropdown-item" id ="selectionner_pays">
@@ -36,9 +37,8 @@
                         </select>
                     </li>
                 </ul>
+                <button onclick="document.getElementById('id01').style.display='block'">Ajouter des statistiques</button>
             </div>
-
-            <button onclick="document.getElementById('id01').style.display='block'">Ajouter des statistiques</button>
 
             <div id="id01" class="modal">
             <form id="formulaire_ajout" class="modal-content" method="post">
@@ -115,7 +115,6 @@
             }
             </script>
         </nav>
-    </head>
     <body>
                 <div id="line_top_x"></div>
 
