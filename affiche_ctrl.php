@@ -11,14 +11,17 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
-$reponse = $bdd->query("SELECT new_cas, deces, guerison FROM cas WHERE id_cas = '$recherche'");
-while ($donnees = $reponse->fetch())
-{
-    echo $donnees['new_cas'] . '<br />';
-    echo $donnees['deces'] . '<br />';
-    echo $donnees['guerison'] . '<br />';
-}
-$reponse->closeCursor();
+$reponse = $bdd->prepare("SELECT new_cas, deces, guerison FROM cas WHERE id_cas = '$recherche'");
+$req->bindParam(':new_cas', PDO::PARAM_INT);
+$req->bindParam(':deces', PDO::PARAM_INT);
+$req->bindParam(':guerison', PDO::PARAM_INT);
+$result = $reponse->execute();
+$donnees = $result->fetchAll();
 
 
-?>
+echo $donnees['new_cas'] . '<br />';
+echo $donnees['deces'] . '<br />';
+echo $donnees['guerison'] . '<br />';
+
+
+
