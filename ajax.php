@@ -1,11 +1,15 @@
 <?php
 
+try {
+  $bdd = new PDO('mysql:host=localhost;dbname=covid;charset=utf8', 'shefla', '357_Pancho');
+  $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+}
+catch(Exception $e){
+  die('Erreur : '.$e->getMessage());
+}
 // ajout de données
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-  //echo '<pre>'.print_r($_POST, true).'</pre>';
   try {
-    $bdd = new PDO('mysql:host=localhost;dbname=covid;charset=utf8', 'shefla', '357_Pancho');
-    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     $req = $bdd->prepare('INSERT INTO cas (
       id_pays_key, 
       id_cas, 
@@ -32,5 +36,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 }
 // lecture données d'un pays
 else {
-
+  try {
+    $req = $bdd->prepare('SELECT * FROM cas WHERE id_pays_key = :id');
+    $req->bindParam(':id', $_GET['id']);
+    $req->execute();
+    $data = $req->fetchAll(PDO::FETCH_ASSOC);
+    echo json_encode($data);
+  }
+  catch(Exception $e){
+    die('Erreur : '.$e->getMessage());
+  }
 }

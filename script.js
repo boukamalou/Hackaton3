@@ -14,16 +14,18 @@ $('#formulaire_ajout').submit(function(event) {
     url: 'ajax.php',
     method: 'POST',
     data: data,
-    success: function(data) {
-      console.log('POST success', data);
-      // TODO ? message de confirmation
+    success: function() {
+      alert('Les données ont bien été enregistrées.')
+    },
+    error: function() {
+      alert('Erreur lors de l\enregistrement des données.');
     }
   });
 });
 
 
 // requête ajax GET quand changement selecteur de pays
-$('#selecteur_pays').change(function() {
+$('#selectionner_pays').change(function() {
   var id_pays = $(this).val();
   $.ajax({
     url: 'ajax.php?id=' + id_pays,
