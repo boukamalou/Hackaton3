@@ -13,32 +13,30 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Choisir un pays
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" value="1">Chine</a>
-                        <a class="dropdown-item" value="2">Usa</a>
-                        <a class="dropdown-item" value="3">France</a>
-                        <a class="dropdown-item" value="4">Allemagne</a>
-                        <a class="dropdown-item" value="5">Royaume-Uni</a>
-                        <a class="dropdown-item" value="6">Italie</a>
-                        <a class="dropdown-item" value="7">Turquie</a>
-                        <a class="dropdown-item" value="8">Algérie</a>
-                        <a class="dropdown-item" value="9">Tunisie</a>
-                        <a class="dropdown-item" value="10">Maroc</a>
-                        <a class="dropdown-item" value="11">Congo</a>
-                        <a class="dropdown-item" value="12">Mali</a>
-                        <a class="dropdown-item" value="13">Afrique du Sud</a>
-                        <a class="dropdown-item" value="14">Australie</a>
-                        <a class="dropdown-item" value="15">Brésil</a>
-                        <a class="dropdown-item" value="16">Mexique</a>
-                </div>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <select class="dropdown-item" id ="selectionner_pays">
+                            <option class="dropdown-item" value="1">Chine</option>
+                            <option class="dropdown-item" value="2">Usa</option>
+                            <option class="dropdown-item" value="3">France</option>
+                            <option class="dropdown-item" value="4">Allemagne</option>
+                            <option class="dropdown-item" value="5">Royaume-Uni</option>
+                            <option class="dropdown-item" value="6">Italie</option>
+                            <option class="dropdown-item" value="7">Turquie</option>
+                            <option class="dropdown-item" value="8">Algérie</option>
+                            <option class="dropdown-item" value="9">Tunisie</option>
+                            <option class="dropdown-item" value="10">Maroc</option>
+                            <option class="dropdown-item" value="11">Congo</option>
+                            <option class="dropdown-item" value="12">Mali</option>
+                            <option class="dropdown-item" value="13">Afrique du Sud</option>
+                            <option class="dropdown-item" value="14">Australie</option>
+                            <option class="dropdown-item" value="15">Brésil</option>
+                            <option class="dropdown-item" value="16">Mexique</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
