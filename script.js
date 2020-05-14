@@ -62,10 +62,11 @@ function drawChart(title, rows) {
     },
     width: 798,
     height: 600,
+    colors: ['red', 'black', 'green'],
     axes: {
       x: {
           0: { side: 'top' }
       }
     }
-}));
-}
+  }));
+};
