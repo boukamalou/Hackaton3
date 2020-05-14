@@ -54,7 +54,7 @@ function drawChart(title, rows) {
   data.addColumn('date', 'Date');
   data.addColumn('number', 'Nouveaux cas');
   data.addColumn('number', 'Décès');
-  data.addColumn('number', 'Guérison');
+  data.addColumn('number', 'Guérisons');
   data.addRows(rows);
   chart.draw(data, google.charts.Line.convertOptions({
     chart: {
