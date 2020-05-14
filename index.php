@@ -37,7 +37,7 @@
                         </select>
                     </li>
                 </ul>
-                <button onclick="document.getElementById('id01').style.display='block'">Ajouter des statistiques</button>
+                <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Ajouter des statistiques</button>
             </div>
 
             <div id="id01" class="modal">
@@ -97,7 +97,7 @@
             </div>
 
                 <div class="clearfix">
-                    <button type="submit" id="ajouter" onclick="document.getElementById('id01').style.display='none'" class="addbtn">Ajouter</button>
+                    <button class="btn btn-primary type="submit" id="ajouter" onclick="document.getElementById('id01').style.display='none'" class="addbtn">Ajouter</button>
                 </div>
                 </div>
             </form>
