@@ -41,6 +41,7 @@ else {
     $req->bindParam(':id', $_GET['id']);
     $req->execute();
     $data = $req->fetchAll(PDO::FETCH_ASSOC);
+    // TODO trier par date la plus ancienne
     echo json_encode($data);
   }
   catch(Exception $e){
