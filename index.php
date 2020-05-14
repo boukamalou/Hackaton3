@@ -122,7 +122,25 @@
                     <img src="798px-World_map_(Miller_cylindrical_projection,_blank).svg.png" alt="Carte du monde" />
                 </div>
 
+                <!-- Footer -->
+        <footer class="page-footer font-small blue">
 
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+            &nbsp;
+            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+            &nbsp;
+            <a href="#"><img src="icons/pinterest.png" alt="Pinterest"></a>
+            &nbsp;
+            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+            <br>
+            &copy; 2020 BIJMM
+        </div>
+        <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
