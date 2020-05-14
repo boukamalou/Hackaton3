@@ -58,7 +58,7 @@ function drawChart(title, rows) {
   data.addRows(rows);
   chart.draw(data, google.charts.Line.convertOptions({
     chart: {
-      title: title + ': évolution du virus' + title
+      title: title + ': évolution du virus'
     },
     width: 798,
     height: 600,
