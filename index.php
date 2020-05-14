@@ -12,28 +12,27 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" />
     </head>
-    
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <select class="dropdown-item" id ="selectionner_pays">
-                            <option class="dropdown-item" value="1">Chine</option>
-                            <option class="dropdown-item" value="2">Usa</option>
-                            <option class="dropdown-item" value="3">France</option>
-                            <option class="dropdown-item" value="4">Allemagne</option>
-                            <option class="dropdown-item" value="5">Royaume-Uni</option>
-                            <option class="dropdown-item" value="6">Italie</option>
-                            <option class="dropdown-item" value="7">Turquie</option>
+                            <option class="dropdown-item" value="13">Afrique du sud</option>
                             <option class="dropdown-item" value="8">Algérie</option>
-                            <option class="dropdown-item" value="9">Tunisie</option>
-                            <option class="dropdown-item" value="10">Maroc</option>
-                            <option class="dropdown-item" value="11">Congo</option>
-                            <option class="dropdown-item" value="12">Mali</option>
-                            <option class="dropdown-item" value="13">Afrique du Sud</option>
+                            <option class="dropdown-item" value="4">Allemagne</option>
                             <option class="dropdown-item" value="14">Australie</option>
                             <option class="dropdown-item" value="15">Brésil</option>
+                            <option class="dropdown-item" value="1">Chine</option>
+                            <option class="dropdown-item" value="11">Congo</option>
+                            <option class="dropdown-item" value="3">France</option>
+                            <option class="dropdown-item" value="6">Italie</option>
+                            <option class="dropdown-item" value="12">Mali</option>
+                            <option class="dropdown-item" value="10">Maroc</option>
                             <option class="dropdown-item" value="16">Mexique</option>
+                            <option class="dropdown-item" value="5">Royaume-Uni</option>
+                            <option class="dropdown-item" value="9">Tunisie</option>
+                            <option class="dropdown-item" value="7">Turquie</option>
+                            <option class="dropdown-item" value="2">USA</option>
                         </select>
                     </li>
                 </ul>
