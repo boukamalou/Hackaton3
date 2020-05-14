@@ -13,87 +13,113 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Choisir un pays
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" value="1">Chine</a>
-                        <a class="dropdown-item" value="2">Usa</a>
-                        <a class="dropdown-item" value="3">France</a>
-                        <a class="dropdown-item" value="4">Allemagne</a>
-                        <a class="dropdown-item" value="5">Royaume-Uni</a>
-                        <a class="dropdown-item" value="6">Italie</a>
-                        <a class="dropdown-item" value="7">Turquie</a>
-                        <a class="dropdown-item" value="8">Algérie</a>
-                        <a class="dropdown-item" value="9">Tunisie</a>
-                        <a class="dropdown-item" value="10">Maroc</a>
-                        <a class="dropdown-item" value="11">Congo</a>
-                        <a class="dropdown-item" value="12">Mali</a>
-                        <a class="dropdown-item" value="13">Afrique du Sud</a>
-                        <a class="dropdown-item" value="14">Australie</a>
-                        <a class="dropdown-item" value="15">Brésil</a>
-                        <a class="dropdown-item" value="16">Mexique</a>
-                </div>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <select class="dropdown-item" id ="selectionner_pays">
+                            <option class="dropdown-item" value="1">Chine</option>
+                            <option class="dropdown-item" value="2">Usa</option>
+                            <option class="dropdown-item" value="3">France</option>
+                            <option class="dropdown-item" value="4">Allemagne</option>
+                            <option class="dropdown-item" value="5">Royaume-Uni</option>
+                            <option class="dropdown-item" value="6">Italie</option>
+                            <option class="dropdown-item" value="7">Turquie</option>
+                            <option class="dropdown-item" value="8">Algérie</option>
+                            <option class="dropdown-item" value="9">Tunisie</option>
+                            <option class="dropdown-item" value="10">Maroc</option>
+                            <option class="dropdown-item" value="11">Congo</option>
+                            <option class="dropdown-item" value="12">Mali</option>
+                            <option class="dropdown-item" value="13">Afrique du Sud</option>
+                            <option class="dropdown-item" value="14">Australie</option>
+                            <option class="dropdown-item" value="15">Brésil</option>
+                            <option class="dropdown-item" value="16">Mexique</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-        <script type="text/javascript">
-        google.charts.load('current', {'packages':['line']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-
-        var data = new google.visualization.DataTable();
-        data.addColumn('number', 'Heures');
-        data.addColumn('number', 'Nouveaux cas');
-        data.addColumn('number', 'Cas mortel');
-        data.addColumn('number', 'Cas remis');
-
-        data.addRows([
-            [1,  37.8, 80.8, 41.8],
-            [2,  30.9, 69.5, 32.4],
-            [3,  25.4,   57, 25.7],
-            [4,  11.7, 18.8, 10.5],
-            [5,  11.9, 17.6, 10.4],
-            [6,   8.8, 13.6,  7.7],
-            [7,   7.6, 12.3,  9.6],
-            [8,  12.3, 29.2, 10.6],
-            [9,  16.9, 42.9, 14.8],
-            [10, 12.8, 30.9, 11.6],
-            [11,  5.3,  7.9,  4.7],
-            [12,  6.6,  8.4,  5.2],
-            [13,  4.8,  6.3,  3.6],
-            [14,  4.2,  6.2,  3.4]
-        ]);
-
-        var options = {
-            chart: {
-            title: 'Nom du pays consulté',
-            subtitle: 'Nombre de cas'
-            },
-            width: 900,
-            height: 500,
-            axes: {
-            x: {
-                0: {side: 'top'}
-            }
-            }
-        };
-
-        var chart = new google.charts.Line(document.getElementById('line_top_x'));
-
-        chart.draw(data, google.charts.Line.convertOptions(options));
-        }
-    </script>
+        
     </head>
     <body>
     <div id="line_top_x"></div>
+
+    <button onclick="document.getElementById('id01').style.display='block'">Ajouter des statistiques</button>
+
+<div id="id01" class="modal">
+<form class="modal-content" action="/action_page.php" method="post">
+    <div class="container">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <h1>Mettre à jour les statistiques</h1>
+    <div class="row">
+<div class="col-sm-6">
+    <label for="">Pays</label>
+        <select id="add_pays">
+            <option value="13">Afrique du sud</option>
+            <option value="8">Algérie</option>
+            <option value="4">Allemagne</option>
+            <option value="14">Australie</option>
+            <option value="15">Brésil</option>
+            <option value="1">Chine</option>
+            <option value="11">Congo</option>
+            <option value="3">France</option>
+            <option value="6">Italie</option>
+            <option value="12">Mali</option>
+            <option value="10">Maroc</option>
+            <option value="16">Mexique</option>
+            <option value="5">Royaume-Uni</option>
+            <option value="9">Tunisie</option>
+            <option value="7">Turquie</option>
+            <option value="2">USA</option>
+        </select>
+    </div>
+
+<div class="col-sm-6">
+    <div class="form-group">
+        <label for="date_k">Date:</label>
+        <input id="date_k" type="date" required class="form-control" name="date_k" value="">
+    </div>    
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+    <div class="form-group">
+        <label for="new_cas">Nombre de nouveaux cas:</label>
+        <input id="new_cas" type="number" required class="form-control" name="new_cas" value="">
+    </div>    
+</div>
+<div class="col-sm-6">
+    <div class="form-group">
+        <label for="deces">Nombre de décès:</label>
+        <input id="deces" type="number" required class="form-control" name="deces" value="">
+    </div>    
+</div>
+</div>
+<div class="form-group">
+<div class="form-group">
+        <label for="guerison">Nombre de guérison:</label>
+        <input id="guerison" type="number" required class="form-control" name="guerison" value="">
+    </div> 
+</div>
+
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="addbtn">Ajouter</button>
+    </div>
+    </div>
+</form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
