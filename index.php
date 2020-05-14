@@ -117,7 +117,9 @@
         </nav>
     </head>
     <body>
-                <div id="line_top_x"></div>
+                <div id="line_top_x">
+                    <p>blabla</p>
+                </div>
 
 
 
