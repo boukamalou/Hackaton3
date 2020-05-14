@@ -19,5 +19,3 @@ $result = $reponse->execute();
 $donnees = $result->fetchAll();
 
 
-
-?>

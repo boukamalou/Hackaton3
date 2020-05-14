@@ -25,4 +25,3 @@ echo $donnees['guerison'] . '<br />';
 
 
 
-?>
